@@ -1,0 +1,61 @@
+{% extends "_base.html" %}
+
+{% block content %}
+<div class="container">
+  <h1>Harvey! Harvey! Harvey! Harvey! HARVEY! HARVEY! HARVEY!</h1>
+
+<img src="chart1.png" alt="chart 1" width="80%"/>
+<div class="col-md-2">
+	<h2>Enrollment</h2> 
+	<h2>totals since</h2>
+	<h2>1967! Woo! </h2>        
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Year</th>
+                  <th>Students</th>
+                  
+                </tr>
+              </thead>
+              <tbody>
+    {% for row in enrollment %}
+               
+                <tr>
+                  <td>{{ row.Year|int }}</td>
+                  <td>{{ row.Students|int }}</td>
+                  
+                </tr>
+    {% endfor %}
+                
+                </tbody></table></div></div>
+ 
+<h2> Harvey has been up to no good.</h2>
+<p>Just kidding. He hasn't. Looking at this data,you can see that the University of Nebraska-Lincoln is trending toward the largest enrollment in school history. Since the schools inception in 1869, there has never been more than 25,075 students enrolled at one time. That maximum can be found in the year 1982, the same year that Miguel de la Madrid became the President of Mexico. Does Harvey have what it takes to push enrollment to never-before-seen heights? How has the College of Journalism and Mass Communications been doing? Let's have a look. </p>
+
+
+<img src="chart2.png" alt="chart 2" width="80%"/>
+    <h3>Something went right in 2013</h3>
+    <p>Or maybe something went wrong in 2012. We're not sure. The point it, over the last 5 years first-time freshman have been rising. With a 500 student jump in from 2012 to 2013, Harvey may have just launched the rocket of Enrollment Gains...or...we might just be seeing a meaningless blip on the proverbial radar. It's too early to know if Harvey is blowing steam or lifting off. We'll see in a few years.</p>
+
+<img src="chart3.png" alt="chart 3" width="80%"/> 
+    <h2>Journalism is...</h2>
+    <p>Journalism just keeps chugging along. Although it's one of the 4 smallest colleges on campus, it's one of the University of Nebraska-Lincoln's best. National awards and top 5 national prestige (although there are no "official" lists, UNL is ranked highly on the respected unofficial ones) help the College of Journalism and Mass Communications to grow. Although the growth has been small, when you're dealing with a college of less than 1,000 students, every little bit helps.</p>
+
+<div class="row">
+
+  <div class="col-md-4">
+  
+  
+    
+
+  </div>
+
+
+
+    <div class="col-md-5">
+	
+  </div>
+</div>
+{% endblock content %}
+
